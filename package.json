@@ -4,7 +4,7 @@
   "author": "Yetibyte",
   "publisher": "yetibyte",
   "description": "Displays the total costs for Copilot premium requests within the current billing period in the stats bar.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
