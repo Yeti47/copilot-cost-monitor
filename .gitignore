@@ -1,0 +1,44 @@
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+out/
+*.tgz
+
+# VS Code
+.vscode/
+.vscode-test/
+
+# Extension packages
+*.vsix
+
+# Environment
+.env
+.env.*
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage / test output
+coverage/
+.nyc_output/
+
+# Caches and tooling
+.cache/
+.parcel-cache/
+.eslintcache
+
+# IDEs
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log

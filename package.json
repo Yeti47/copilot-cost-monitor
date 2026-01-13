@@ -1,0 +1,76 @@
+{
+  "name": "copilot-cost-monitor",
+  "displayName": "Copilot Cost Monitor",
+  "author": "Yetibyte",
+  "publisher": "yetibyte",
+  "description": "Displays the total costs for Copilot premium requests within the current billing period in the stats bar.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Copilot Cost Monitor",
+      "properties": {
+        "copilotCostMonitor.githubUsername": {
+          "type": "string",
+          "default": "",
+          "description": "GitHub Username for fetching billing data"
+        },
+        "copilotCostMonitor.pollingInterval": {
+          "type": "number",
+          "default": 300,
+          "description": "Polling interval in seconds"
+        },
+        "copilotCostMonitor.warningThreshold": {
+          "type": "number",
+          "default": 10,
+          "description": "Cost threshold for warning color (Yellow)"
+        },
+        "copilotCostMonitor.errorThreshold": {
+          "type": "number",
+          "default": 20,
+          "description": "Cost threshold for error color (Red)"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "copilotCostMonitor.refresh",
+        "title": "Copilot Cost Monitor: Refresh Cost"
+      },
+      {
+        "command": "copilotCostMonitor.setToken",
+        "title": "Copilot Cost Monitor: Set GitHub Token"
+      },
+      {
+        "command": "copilotCostMonitor.deleteToken",
+        "title": "Copilot Cost Monitor: Clear GitHub Token"
+      },
+      {
+        "command": "copilotCostMonitor.createToken",
+        "title": "Copilot Cost Monitor: Create GitHub Token"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/node": "20.x",
+    "typescript": "^5.7.2"
+  }
+}
