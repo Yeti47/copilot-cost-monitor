@@ -23,7 +23,7 @@ A minimal VS Code extension that displays your accrued GitHub Copilot Premium co
 ## Setup
 
 ### 1. Requirements
-You need a GitHub Personal Access Token (PAT) (Classic) with the **`read:plan`** scope.
+You need a GitHub Personal Access Token (PAT) with the **`read:plan`** scope.
 [Generate one here](https://github.com/settings/personal-access-tokens/new?name=Copilot%20Cost%20Monitor&description=Plan%20read%20permissions%20for%20Copilot%20Cost%20Monitor%20Extension&plan=read).
 
 ### 2. Configuration
