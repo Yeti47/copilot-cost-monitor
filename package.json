@@ -6,6 +6,10 @@
   "description": "Displays the total costs for Copilot premium requests within the current billing period in the stats bar.",
   "version": "0.0.1",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yeti47/copilot-cost-monitor.git"
+  },
   "engines": {
     "vscode": "^1.96.0"
   },
